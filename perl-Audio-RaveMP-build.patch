@@ -1,0 +1,40 @@
+--- Audio-RaveMP-0.04/ravemp.c.orig	2000-01-31 05:11:17.000000000 +0100
++++ Audio-RaveMP-0.04/ravemp.c	2004-05-08 18:38:29.527075789 +0200
+@@ -802,7 +802,7 @@
+ 
+     if ((blkbuff=malloc(buffsize)) == NULL) {
+ 	XP("Memory Allocation failure\n");
+-	exit();
++	exit(1);
+     }
+ 
+     /* Read the block */
+@@ -955,7 +955,7 @@
+ 
+     if ((blkbuff=malloc(MAX_BLOCK_SIZE)) == NULL) {
+ 	XP("Memory Allocation failure\n");
+-	exit();
++	exit(1);
+     }
+ 
+     /* Read existing FAT data block */
+@@ -1651,7 +1651,7 @@
+ 
+     if ((baseblk=malloc(buffsize)) == NULL || (datablk=malloc(buffsize)) == NULL) {
+ 	XP("Memory Allocation failure\n");
+-	exit();
++	exit(1);
+     }
+ 
+     show_info(firstblock,baseblk,datablk);
+--- Audio-RaveMP-0.04/ravemp.h.orig	2000-01-31 05:09:15.000000000 +0100
++++ Audio-RaveMP-0.04/ravemp.h	2004-05-08 18:38:55.040988299 +0200
+@@ -9,7 +9,7 @@
+ #include <unistd.h>
+ #include <sys/perm.h>
+ #include <sys/stat.h>
+-#include <asm/io.h>
++#include <sys/io.h>
+ #else
+ #error This code is currently Linux-specific.
+ #endif
