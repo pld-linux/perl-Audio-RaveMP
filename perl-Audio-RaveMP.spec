@@ -9,7 +9,7 @@ Summary:	Audio::RaveMP Perl module - interface to Sensory Science RaveMP player
 Summary(pl):	Modu³ Perla Audio::RaveMP - interfejs do odtwarzacza Sensory Science RaveMP
 Name:		perl-Audio-RaveMP
 Version:	0.04
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
