@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 # 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Audio
-%define	pnam	RaveMP
+%define		pdir	Audio
+%define		pnam	RaveMP
 Summary:	Audio::RaveMP Perl module - interface to Sensory Science RaveMP player
 Summary(pl):	Modu³ Perla Audio::RaveMP - interfejs do odtwarzacza Sensory Science RaveMP
 Name:		perl-Audio-RaveMP
