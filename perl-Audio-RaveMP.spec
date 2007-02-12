@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	RaveMP
 Summary:	Audio::RaveMP Perl module - interface to Sensory Science RaveMP player
-Summary(pl):	Modu³ Perla Audio::RaveMP - interfejs do odtwarzacza Sensory Science RaveMP
+Summary(pl.UTF-8):   ModuÅ‚ Perla Audio::RaveMP - interfejs do odtwarzacza Sensory Science RaveMP
 Name:		perl-Audio-RaveMP
 Version:	0.04
 Release:	4
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Audio::RaveMP module provides a Perl interface to the Sensory
 Science RaveMP player.
 
-%description -l pl
-Modu³ Audio::RaveMP udostêpnia perlowy interfejs do odtwarzacza
+%description -l pl.UTF-8
+ModuÅ‚ Audio::RaveMP udostÄ™pnia perlowy interfejs do odtwarzacza
 Sensory Science RaveMP.
 
 %prep
