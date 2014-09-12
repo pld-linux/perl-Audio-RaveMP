@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/Audio/RaveMP*.pm
 %dir %{perl_vendorarch}/auto/Audio/RaveMP
-%{perl_vendorarch}/auto/Audio/RaveMP/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/RaveMP/*.so
 %{_mandir}/man3/*
