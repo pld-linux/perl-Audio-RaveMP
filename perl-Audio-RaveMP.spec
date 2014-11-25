@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-# 
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Audio
 %define		pnam	RaveMP
+%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::RaveMP Perl module - interface to Sensory Science RaveMP player
 Summary(pl.UTF-8):	Moduł Perla Audio::RaveMP - interfejs do odtwarzacza Sensory Science RaveMP
 Name:		perl-Audio-RaveMP
@@ -15,6 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a9635c52c73fe4344919da0d0a5fca41
 Patch0:		%{name}-build.patch
+URL:		http://search.cpan.org/dist/Audio-RaveMP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 # uses direct iob()/outb() on 0x378 port
